@@ -24,7 +24,7 @@
       <background>0.7 0.7 0.7 1</background>
       <shadows>1</shadows>
     </scene>
-    <state world_name="default">
+    <!-- <state world_name="default">
       <sim_time>659 735000000</sim_time>
       <real_time>669 239415336</real_time>
       <wall_time>1390840556 284092517</wall_time>
@@ -102,7 +102,7 @@
         <acceleration>0 0 0 0 -0 0</acceleration>
         <wrench>0 0 0 0 -0 0</wrench>
       </link>
-    </model></state>
+    </model></state> -->
     <gui fullscreen="0">
       <camera name="user_camera">
         <pose>1.49016 -3.72367 3.62379 -2.88294e-17 0.273797 1.4042</pose>
@@ -680,6 +680,6 @@
       <kinematic>0</kinematic>
       <gravity>1</gravity>
     </link>
-    <pose frame="">7 -1 0 0 -0 0</pose>
+    <pose frame="">6 -1 0 0 -0 1.6</pose>
   </model></world>
 </sdf>

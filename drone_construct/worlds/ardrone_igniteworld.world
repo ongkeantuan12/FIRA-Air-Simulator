@@ -270,7 +270,7 @@
       <kinematic>0</kinematic>
       <gravity>1</gravity>
     </link>
-    <pose frame="">8.55113 5 0 0 -0 0</pose>
+    <pose frame="">10.402 7.71769 0 0 -0 0</pose>
   </model><model name="jersey_barrier">
     <static>1</static>
     <link name="link">
@@ -436,7 +436,7 @@
       <kinematic>0</kinematic>
       <gravity>1</gravity>
     </link>
-    <pose frame="">5 5 0 0 -0 0</pose>
+    <pose frame="">9.01164 2.82223 0 0 -0 0</pose>
   </model><model name="nist_maze_wall_240">
     <static>1</static>
     <link name="nist__maze_wall_240_link">
@@ -553,7 +553,7 @@
       <kinematic>0</kinematic>
       <gravity>1</gravity>
     </link>
-    <pose frame="">11 3 0 0 -0 0</pose>
+    <pose frame="">9.02578 4.02961 1.2 0 -0 0</pose>
   </model><model name="jersey_barrier_0">
     <static>1</static>
     <link name="link">

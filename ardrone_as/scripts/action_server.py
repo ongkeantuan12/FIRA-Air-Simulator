@@ -11,6 +11,7 @@ from sensor_msgs.msg import CompressedImage
 class ArdroneAS(object):
     _feedback = ArdroneFeedback()
     _result = ArdroneResult()
+    _lastImage = CompressedImage()
     
     def __init__(self):
         

@@ -2,11 +2,9 @@
   <name>gate_system</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for gate_system</p>
-    <p>This package contains configuration data, 3D models and launch files
-for gate_system robot</p>
+    <p>FIRA AIR Simulation Competitions Gate System </p>
   </description>
-  <author>TODO</author>
+  <author>FIRA AIR</author>
   <maintainer email="TODO@email.com" />
   <license>BSD</license>
   <buildtool_depend>catkin</buildtool_depend>

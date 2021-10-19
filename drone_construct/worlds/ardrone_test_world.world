@@ -69,9 +69,13 @@
       <gravity>0 0 -9.8</gravity>
     </physics>
     <scene>
-      <ambient>0.4 0.4 0.4 1</ambient>
-      <background>0.7 0.7 0.7 1</background>
+      <ambient>100.0 100.0 100.0 1.0</ambient>
       <shadows>1</shadows>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
     </scene>
     <model name='House 3'>
       <static>1</static>

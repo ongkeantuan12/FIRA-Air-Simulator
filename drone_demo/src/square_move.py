@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import rospy
 import time
@@ -78,7 +78,7 @@ class MoveSquareClass(object):
     turnSeconds = 1.8
     
     i = 0
-    for i in xrange(0, 4):
+    for i in range(0, 4):
     
       # Logic that makes the robot move forward and turn
       self.move_forward_drone()

@@ -3,18 +3,18 @@
     <env name="GAZEBO_PLUGIN_PATH" value="$GAZEBO_PLUGIN_PATH:$(find sjtu_drone)/plugins"/> <!--add custom plugins for drone to gazebo plugin path-->
     <env name="GAZEBO_RESOURCE_PATH" value="$GAZEBO_RESOURCE_PATH:$(find sjtu_drone)/meshes"/>
 
-    <arg name="world_name" default=""/>
-    <!-- <arg name="world_name" default="$(find sjtu_drone)/worlds/contest.world"/> -->
+    <!-- <arg name="world_name" default=""/> -->
+    <arg name="world_name" default="$(find fira_challenge_env)/worlds/challenge.world"/>
     <arg name="paused" value="false"/>
     <arg name="verbose" value="true"/>
     <arg name="gui" value="true"/>
 
     <!-- launch the custom world -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch" >
-            <arg name="paused" value="$(arg paused)"/>
-            <arg name="world_name" value="$(arg world_name)"/>
-            <arg name="verbose" value="$(arg verbose)"/>
-            <arg name="gui" value="$(arg gui)"/>
+      <arg name="paused" value="$(arg paused)"/>
+      <arg name="world_name" value="$(arg world_name)"/>
+      <arg name="verbose" value="$(arg verbose)"/>
+      <arg name="gui" value="$(arg gui)"/>
     </include>
 
     <arg name="sdf_robot_file" value="$(find sjtu_drone)/models/sjtu_drone/sjtu_drone.sdf"/>

@@ -30,6 +30,9 @@ git clone https://github.com/Amxrmohammad/FIRA-Air-Simulator.git
 cd ..
 catkin_make
 source ~/.bashrc
+
+# Make sure to run the following line to update static paths (Important)
+rosrun fira_challenge_env model_update.py
 ```
 The installation process is done.
 

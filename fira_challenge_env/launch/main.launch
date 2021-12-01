@@ -1,0 +1,11 @@
+<launch>
+
+    <include file="$(find sjtu_drone)/launch/start.launch"/>
+    
+    <!-- <include file="$(find gate_system)/launch/gazebo.launch"/> -->
+
+    <!-- <node name="randomizer" pkg="gate_system" type="randomizer.py" output="screen" launch-prefix="bash -c 'sleep 3; $0 $@' "/> -->
+    
+    <node name="start_spin" pkg="gate_system" type="start_spin.py" output="screen" launch-prefix="bash -c 'sleep 3; $0 $@' "/>
+
+</launch>

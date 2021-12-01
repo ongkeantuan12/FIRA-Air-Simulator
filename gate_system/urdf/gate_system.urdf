@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <robot
   name="gate_system">
+  <link name="world"/>
   <link
     name="base_link">
     <inertial>
@@ -8,14 +10,14 @@
         xyz="1.0311 -2.5557 2.3905"
         rpy="0 0 0" />
       <mass
-        value="110.87" />
+        value="1100.87" />
       <inertia
-        ixx="38.184"
-        ixy="-2.8868E-16"
-        ixz="2.8377E-14"
-        iyy="76.565"
-        iyz="-3.8292E-15"
-        izz="38.525" />
+        ixx="0.037259"
+        ixy="2.1212E-19"
+        ixz="8.3317E-20"
+        iyy="0.0024207"
+        iyz="-0.0078999"
+        izz="0.035026" />
     </inertial>
     <visual>
       <origin
@@ -48,7 +50,7 @@
         xyz="0 0.27188 0.062404"
         rpy="0 0 0" />
       <mass
-        value="1.2463" />
+        value="0.1" />
       <inertia
         ixx="0.037259"
         ixy="2.1212E-19"
@@ -96,16 +98,29 @@
       effort="0"
       velocity="0" />
   </joint>
-  <gazebo reference="base_link">
+
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo reference="base_link" type="fixed">
     <material>Gazebo/White</material>
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>500</mu1>
+    <mu2>500</mu2>
     <selfCollide>False</selfCollide>
+    <static>true</static>
   </gazebo>
+  
   <gazebo reference="rotating_link">
     <material>Gazebo/Orange</material>
     <mu1>0.2</mu1>
     <mu2>0.2</mu2>
-    <selfCollide>False</selfCollide>
+    <gravity>false</gravity>
+    <selfCollide>false</selfCollide>
+    <static>false</static>
   </gazebo>
+
 </robot>

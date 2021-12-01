@@ -3,13 +3,13 @@ FIRA Air Simulator
 
 ## Changelog
 ### Update 1.0.2
-Fixed rotating_link motion (Changed to Constant speed)
-Fixed the slight movement of gate on the scene
-Removed the "H" tag next to the gate
-Fixed launch errors
-Added bash file "run.sh" to run the simulator
-Added Model updater to fix the static paths in the world files
-Updated gate physical parameters
+- Fixed rotating_link motion (Changed to Constant speed)
+- Fixed the slight movement of gate on the scene
+- Removed the "H" tag next to the gate
+- Fixed launch errors
+- Added bash file "run.sh" to run the simulator
+- Added Model updater to fix the static paths in the world files
+- Updated gate physical parameters
 
 ### Tested Minimum Local Hardware Requirements
 CPU: Intel® Core™ i5-5257U CPU @ 2.70GHz <br/>

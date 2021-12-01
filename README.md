@@ -6,7 +6,7 @@ FIRA Air Simulator
 - Fixed rotating_link motion (Changed to Constant speed)
 - Fixed the slight movement of gate on the scene
 - Removed the "H" tag next to the gate
-- Fixed launch errors
+- Fixed launch errors and robot spawn errors (Please make sure to run ```rosrun fira_challenge_env model_update.py```)
 - Added bash file "run.sh" to run the simulator
 - Added Model updater to fix the static paths in the world files
 - Updated gate physical parameters

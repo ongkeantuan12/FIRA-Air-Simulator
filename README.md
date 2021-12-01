@@ -1,6 +1,16 @@
 # FIRA-Air-Simulator
 FIRA Air Simulator
 
+## Changelog
+### Update 1.0.2
+Fixed rotating_link motion (Changed to Constant speed)
+Fixed the slight movement of gate on the scene
+Removed the "H" tag next to the gate
+Fixed launch errors
+Added bash file "run.sh" to run the simulator
+Added Model updater to fix the static paths in the world files
+Updated gate physical parameters
+
 ### Tested Minimum Local Hardware Requirements
 CPU: Intel® Core™ i5-5257U CPU @ 2.70GHz <br/>
 GPU: Intel® Iris 6100 <br/>
@@ -31,13 +41,15 @@ cd ..
 catkin_make
 source ~/.bashrc
 
-# Make sure to run the following line to update static paths (Important)
+# Make sure to run the following line to update static paths (Important) 
 rosrun fira_challenge_env model_update.py
 ```
 The installation process is done.
 
-### Usage
+### Usage (Updated)
 ```bash
-roslaunch sjtu_drone start.launch
+roscd fira_challenge_env
+cd src
+./run.sh
 ```
 The drone can be controlled through the /cmd_vel topic using a Twist type message. teleop_keyboard_twist can also be used to controll the drone using keyboard.

@@ -36,7 +36,7 @@ catkin init
 # Add workspace to bashrc.
 echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
 cd src
-git clone https://github.com/Amxrmohammad/FIRA-Air-Simulator.git
+git clone https://github.com/FIRAAir/FIRA-Air-Simulator.git
 cd ..
 catkin_make
 source ~/.bashrc
